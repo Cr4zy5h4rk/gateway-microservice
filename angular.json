@@ -105,7 +105,8 @@
             "buildTarget": "::development",
             "runnerConfig": true,
             "coverageReporters": ["text", "lcov"],
-            "reporters": ["default", ["vitest-sonar-reporter", { "outputFile": "./target/test-results/TESTS-results-sonar-vitest.xml" }]],
+            "reporters": ["default", "junit"],
+            "outputFile": "./target/test-results/TESTS-results-vitest.xml",
             "watch": false,
             "tsConfig": "tsconfig.spec.json"
           }

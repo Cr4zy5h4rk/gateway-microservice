@@ -135,7 +135,7 @@
     "tinyglobby": "0.2.17",
     "typescript": "6.0.3",
     "typescript-eslint": "8.68.0",
-    "vitest": "4.1.11",
+    "vitest": "^4.1.11",
     "vitest-sonar-reporter": "3.0.0",
     "wait-on": "9.1.0"
   },
