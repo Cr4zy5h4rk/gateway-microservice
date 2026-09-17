@@ -770,7 +770,7 @@
                             </platforms>
                         </from>
                         <to>
-                            <image>gateway:latest</image>
+                          <image>docker.io/cr4zy5h4rk/gateway-service:latest</image>
                         </to>
                         <container>
                             <entrypoint>
