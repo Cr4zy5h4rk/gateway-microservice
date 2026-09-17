@@ -1,0 +1,47 @@
+entity Product {
+  name String required
+  price BigDecimal required
+  stock Integer required
+}
+
+entity Category {
+  name String required
+}
+
+entity Customer {
+  firstName String required
+  lastName String required
+  email String required
+}
+
+entity Address {
+  street String
+  city String
+  country String
+}
+
+entity Order {
+  orderDate Instant required
+  status OrderStatus required
+  customerId Long required
+}
+
+entity OrderItem {
+  productId Long required
+  quantity Integer required
+  unitPrice BigDecimal required
+}
+
+enum OrderStatus {
+  PENDING, CONFIRMED, SHIPPED, CANCELLED
+}
+
+relationship OneToMany {
+  Category to Product
+  Customer to Address
+  Order to OrderItem
+}
+
+microservice Product, Category with catalog
+microservice Customer, Address with customer
+microservice Order, OrderItem with order
