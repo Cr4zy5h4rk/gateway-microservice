@@ -40,7 +40,7 @@ node {
         } catch(err) {
             throw err
         } finally {
-            junit '**/target/test-results/TESTS-results-sonar-vitest.xml'
+            junit '**/target/test-results/TESTS-results-vitest.xml'
         }
     }
 
