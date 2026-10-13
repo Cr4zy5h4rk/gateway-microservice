@@ -115,7 +115,7 @@
     "angular-eslint": "22.1.0",
     "axios": "1.19.0",
     "browser-sync": "3.0.4",
-    "concurrently": "10.0.5",
+    "concurrently": "10.0.6",
     "deepmerge": "4.3.1",
     "eslint": "10.9.1",
     "eslint-config-prettier": "10.1.8",
